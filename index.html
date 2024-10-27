@@ -22,32 +22,34 @@
         <div class="container">
             <nav class="page-nav">
                 <a href="./index.html" class="logo">Web<span class="accent">Studio</span></a>
-
-                <ul class="nav-menu">
-                    <li class="link-list">
-                        <a href="./index.html" class="current">Studio</a>
+                <ul class="nav-list">
+                    <li class="link-item">
+                        <a href="./index.html" class="link current">Studio</a>
                     </li>
-                    <li class="link-list">
+                    <li class="link-item">
                         <a href="" class="link">Portfolio</a>
                     </li>
-                    <li class="link-list">
+                    <li class="link-item">
                         <a href="" class="link">Contacts</a>
                     </li>
                 </ul>
             </nav>
-            <address class="list-contacts">
-                <ul class="contacts-style">
+            <address class="contacts">
+                <ul class="contacts-list">
                     <li class="contacts-item">
-                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
                     </li>
                     <li class="contacts-item">
-                        <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+                        <a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
-            <svg class="icon-header" width="24" height="24">
-                <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
+            <button class="burger-btn" type="button">
+                <svg class="icon-burger" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+
         </div>
     </header>
 
@@ -55,7 +57,7 @@
         <section class="section-solutions">
             <div class="container">
                 <h1 class="page-title">Effective Solutions for Your Business</h1>
-                <button type="button" class="button">Order Service</button>
+                <button class="hero-btn" type="button">Order Service</button>
             </div>
         </section>
 
@@ -534,13 +536,13 @@
     </div>
 
     <div class="mobile-menu">
-        <div class="modal-menu">
+        <div class="container modal-menu">
             <button class="button-close" type="button">
                 <svg class="icon-close-modal" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <div class="container-mobile-menu">
+            <nav class="nav-mobile-menu">
                 <ul class="list-mobile-menu">
                     <li class="item-mobile-menu">
                         <a class="link" href="./index.html">Studio</a>
@@ -552,14 +554,14 @@
                         <a class="link" href="">Contacts</a>
                     </li>
                 </ul>
-            </div>
-            <address class="list-contacts-mobile">
-                <ul class="contacts-style-mobile">
+            </nav>
+            <address class="contacts-mobile">
+                <ul class="list-contacts-mobile">
                     <li class="item-contacts-mobile">
-                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                     <li class="item-contacts-mobile">
-                        <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                 </ul>
             </address>
