@@ -12,4 +12,4 @@
     function toggleModal() {
         refs.modal.classList.toggle('is-open');
     }
-})()
+})();

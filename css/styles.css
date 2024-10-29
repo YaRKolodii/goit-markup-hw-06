@@ -202,7 +202,7 @@ fill: #2F2F37;
         align-items: center;
         gap: 40px;
     }
-    .link-item .link{
+    .link-item .nav-link{
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -214,6 +214,12 @@ fill: #2F2F37;
         font-style: normal;
         display: block;
     }
+    .nav-link {
+color: #2E2F42;
+text-decoration: none;
+transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
     .link-item .current{
         text-decoration: none;
         position: relative;
@@ -221,7 +227,9 @@ fill: #2F2F37;
         color: #404BBf;
     }
     .link-item .current:hover,
-    .link-item .current:focus {
+    .link-item .current:focus,
+    .nav-link:hover,
+    .nav-link:focus{
         color: #404BBf;
     }
     .link-item .current::after{
@@ -367,6 +375,15 @@ margin-bottom: 40px;
 }
 .item-mobile-menu:last-child{
 margin-bottom: 0;
+}
+.link-mobile-menu {
+color: #2E2F42;
+text-decoration: none;
+transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-mobile-menu:hover,
+.link-mobile-menu:focus {
+color: #404BBF;
 }
 .contacts-mobile{
 margin-bottom: 48px;
@@ -1010,8 +1027,6 @@ box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-
-
 }
 
 .modal-overlay.is-open{
@@ -1199,8 +1214,6 @@ letter-spacing: 0.04em;
 text-align: left;
 color: #4D5AE5;
 }
-
-
 .form-submit{
 display: block;
 margin-left: auto;
