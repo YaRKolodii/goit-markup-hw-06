@@ -44,7 +44,7 @@
                     </li>
                 </ul>
             </address>
-            <button class="burger-btn" type="button">
+            <button class="burger-btn" type="button" data-menu-open>
                 <svg class="icon-burger" width="24" height="24">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
@@ -57,7 +57,7 @@
         <section class="section-solutions">
             <div class="container">
                 <h1 class="page-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -474,9 +474,9 @@
         </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
         <div class="modal">
-            <button class="button-close" type="button">
+            <button class="button-close" type="button" data-modal-close>
                 <svg class="icon-close-modal" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -526,8 +526,10 @@
                             <svg class="form-icon-chekbox" width="10" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
-                        </span>I accept the terms and conditions of the <a class="form-private-policy" href="">Privacy
-                            Policy</a>
+                        </span>
+                        <span>I accept the terms and conditions of the
+                            <a class="form-private-policy" href="">Privacy
+                                Policy</a></span>
                     </label>
                 </div>
                 <button class="form-submit" type="submit">Send</button>
@@ -535,9 +537,9 @@
         </div>
     </div>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
         <div class="container modal-menu">
-            <button class="button-close" type="button">
+            <button class="button-close" type="button" data-modal-close>
                 <svg class="icon-close-modal" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -545,7 +547,7 @@
             <nav class="nav-mobile-menu">
                 <ul class="list-mobile-menu">
                     <li class="item-mobile-menu">
-                        <a class="link" href="./index.html">Studio</a>
+                        <a class="link current" href="./index.html">Studio</a>
                     </li>
                     <li class="item-mobile-menu">
                         <a class="link" href="">Portfolio</a>
@@ -558,7 +560,7 @@
             <address class="contacts-mobile">
                 <ul class="list-contacts-mobile">
                     <li class="item-contacts-mobile">
-                        <a class="link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="link-mobile current" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                     <li class="item-contacts-mobile">
                         <a class="link-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -599,6 +601,8 @@
             </div>
         </div>
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
