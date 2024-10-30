@@ -4,7 +4,7 @@
 
         closeModalBtn: document.querySelector('[data-menu-close]'),
 
-        modal: document.querySelector('{data-menu]')
+        modal: document.querySelector('[data-menu]')
     };
 
     refs.openModalBtn.addEventListener('click', toggleModal);
